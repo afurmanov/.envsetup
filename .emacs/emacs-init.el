@@ -13,7 +13,8 @@
     (require 'initialize-xgtags-mode)
     (require 'initialize-markdown-mode)
     (require 'initialize-clojure-mode)
-    (require 'initialize-jshint-mode)
+    (require 'initialize-jslint-mode)
+    (require 'exec-path-from-shell)
 
     (initialize-javascript-mode)
     (initialize-python-mode)
@@ -28,7 +29,9 @@
     (initialize-xgtags-mode)
     (initialize-markdown-mode)
     (initialize-clojure-mode)
-    (initialize-jshint-mode)
+    (exec-path-from-shell-initialize)
+    (initialize-jslint-mode)
+
 
     ;;don't make a backup
     (setq-default backup-inhibited t)
